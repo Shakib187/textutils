@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        "use strict"
+
+        // let a = 35;
+        // let a = 'This is me';
+        // const a = 45;
+        let a = 45;
+        a = 2455 + 5;
+        console.log(a);
+        // numbers
+        // objects
+        // booleans - true or false
+        // Strings
+        // undefined
+        // null
+
+        function hello(){
+            console.log(" Hey Shakib");
+        }
+        let obja = {
+            r: 34,
+            m: 64,
+            func: function myfunc(number){
+                console.log("The number is " + number);
+
+            }
+
+        }
+
+        document.addEventListener("click" , function click (){
+            console.log("clicked");
+            // alart("hello")
+          let conf = confirm("Are you sure ??");
+          console.log(conf);
+
+
+        })
+        // for (let index = 0; index < array.length; index++) {
+        //     const element = array[index];
+            
+        // }
+        let arr = [ 34, 21, 23];
+        console.log(this);
+        // function myfunc(number){
+        //         console.log("The number is " + this);
+        // }
+        // myfunc();
+        let mobj = {
+            a: this,
+myfunc : function(number){
+                console.log( this);
+        }
+    }
+        mobj.myfunc();
+        console.log(mobj.a);
+        setTimeout(() => {
+     console.log("yayyy")
+              
+        },3000);
+        console.log("mai neeche wali script hoon");
+
+       
+
+    </script>
+</head>
+<body>
+    <h1>
+       I am learning   javascript
+    </h1>
+    </body>
+</html>
