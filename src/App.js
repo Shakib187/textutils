@@ -26,8 +26,25 @@ const showAlert = (message, type) => {
   }, 1500);
 };
 
-  // Whether dark mode is enabled or not
-  const toggleMode = () => {
+//   // Whether dark mode is enabled or not
+// const removeBodyClasses = () => {
+//   document.body.classList.remove('bg-light');
+//   document.body.classList.remove('bg-dark');
+//   document.body.classList.remove('bg-primary');
+//   document.body.classList.remove('bg-danger');
+//   document.body.classList.remove('bg-success');
+//   document.body.classList.remove('bg-warning');
+// };
+
+// const toggleMode =(cls) => {
+//   removeBodyClasses();
+//   // console.log(cls);
+//   document.body.classList.add('bg-'+cls)
+  
+  
+    // document.body.classList.remove('bg-dark');
+    // document.body.classList.remove('bg-warning');
+    const toggleMode = () => {
     if (Mode === 'light') {
       setMode('dark');
       document.body.style.backgroundColor ='#042743';
